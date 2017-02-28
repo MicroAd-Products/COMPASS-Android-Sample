@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">COMPASS Demo</string>
+    <string name="inline_spot_id">647002efdda3c5a4937dffcdc45c9689</string>
+    <string name="interstitial_spot_id">5c65e2e79450f3c8a5a6470652d9e8bf</string>
+
+    <string name="inline_text">COMPASS インライン</string>
+    <string name="webview_standalone_text">COMPASS Webview 単体</string>
+    <string name="interstitial_text">COMPASS インタースティシャル</string>
+    <string name="show_interstitial_text">インタースティシャルを表示する</string>
+
+</resources>
