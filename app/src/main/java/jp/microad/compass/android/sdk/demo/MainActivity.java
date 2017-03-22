@@ -3,6 +3,7 @@ package jp.microad.compass.android.sdk.demo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
@@ -12,6 +13,7 @@ import jp.microad.compass.smartphone.sdk.android.CompassInlineFragment;
 import jp.microad.compass.smartphone.sdk.android.CompassInlineViewCallback;
 import jp.microad.compass.smartphone.sdk.android.CompassInterstitialFragment;
 import jp.microad.compass.smartphone.sdk.android.CompassInterstitialViewCallback;
+import jp.microad.compass.smartphone.sdk.android.BuildConfig;
 
 //COMPASS WebView 単体
 import jp.microad.compass.smartphone.sdk.android.CompassWebViewCreator;
@@ -39,6 +41,8 @@ public class MainActivity extends AppCompatActivity
         //COMPASS インタースティシャルフラグメントを表示するボタン
         buttonShowInterstitial = (Button)findViewById(R.id.button_show_interstitial);
         buttonShowInterstitial.setOnClickListener(this);
+
+        Log.i("COMPASS SDK VERSION: ", BuildConfig.VERSION_NAME);
     }
 
     @Override
